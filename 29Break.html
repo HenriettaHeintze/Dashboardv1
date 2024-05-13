@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--DOCCUMENT SETUP -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!--SPACES AT THE TOP -->
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    
+    <!--PUTTING VIDEO 1 ON THE PAGE -->
+    <div style="text-align:center"> 
+        <video id="video1" height="566" loop>
+          <source src="Cat.mp4" type="video/mp4" >
+        </video>
+    </div>
+    
+    <!--LINE BREAK-->
+    <br><br>
+    <br><br>
+    
+    <!--PUTTING VIDEO 2 ON THE PAGE-->
+    <div style="text-align:center"> 
+        <video id="video2" height="566" loop>
+          <source src="Cartoon.mp4" type="video/mp4" >
+        </video>
+    </div>  
+
+    <!--LINE BREAK-->
+    <br><br>
+    <br><br>
+        
+    <!--PUTTING VIDEO 3 ON THE PAGE-->
+    <div style="text-align:center"> 
+        <video id="video3" height="566" loop>
+            <source src="Bridge.mp4" type="video/mp4" >
+        </video>
+    </div>  
+
+    <!--LINE BREAK-->
+    <br><br>
+    <br><br>
+        
+    <!--PUTTING VIDEO 4 ON THE PAGE-->
+    <div style="text-align:center"> 
+        <video id="video4" height="566" loop>
+            <source src="Beach.mp4" type="video/mp4" >
+        </video>
+    </div> 
+
+    <!--LINE BREAK-->
+    <br><br>
+    <br><br>    
+    
+    <!--PUTTING VIDEO 4 ON THE PAGE-->
+    <div style="text-align:center"> 
+        <video id="video5" height="566" loop>
+            <source src="Press.mp4" type="video/mp4" >
+        </video>
+    </div> 
+    
+    <!--SPACES AT THE BOTTOM -->
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    
+    
+    <!--JAVASCRIPT!!!-->
+    <script> 
+        //DEFINTING ALL 3 VIDEOS AS VARIBLES
+        var myVideo1 = document.getElementById("video1"); 
+        var myVideo2 = document.getElementById("video2");
+        var myVideo3 = document.getElementById("video3");
+        var myVideo4 = document.getElementById("video4");
+        var myVideo5 = document.getElementById("video5");
+        //DEFINING OTHER VARIABLES 
+        var Videotime = 0;
+        var WhereamI = 0;
+        var counter = 0;
+        
+        //FUNCTION: PAUSE CURRENT VID, LOG THE TIME AND START PLAYING VIDEO 1 AT THAT TIME
+        function play1() { 
+            if (WhereamI == 2) {
+                myVideo2.pause();
+                Videotime = myVideo2.currentTime;
+            }
+            if (WhereamI == 3) {
+                myVideo3.pause();
+                Videotime = myVideo3.currentTime;
+            }
+            if (WhereamI == 4) {
+                myVideo4.pause();
+                Videotime = myVideo4.currentTime;
+            }
+            if (WhereamI == 5) {
+                myVideo5.pause();
+                Videotime = myVideo5.currentTime;
+            }
+            myVideo1.currentTime = Videotime;
+            console.log(Videotime);
+            myVideo1.play();
+            myVideo1.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+            WhereamI = 1;
+        }
+
+        //FUNCTION: PAUSE CURRENT VID, LOG THE TIME AND START PLAYING VIDEO 2 AT THAT TIME
+        function play2() { 
+            if (WhereamI == 1) {
+                myVideo1.pause();
+                Videotime = myVideo1.currentTime;
+
+            }
+            if (WhereamI == 3) {
+                myVideo3.pause();
+                Videotime = myVideo3.currentTime;
+            }
+            if (WhereamI == 4) {
+                myVideo4.pause();
+                Videotime = myVideo4.currentTime;
+            }
+            if (WhereamI == 5) {
+                myVideo5.pause();
+                Videotime = myVideo5.currentTime;
+            }
+            myVideo2.currentTime = Videotime;
+            console.log(Videotime);
+            myVideo2.play();
+            myVideo2.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+            WhereamI = 2;
+        }
+        //FUNCTION: PAUSE CURRENT VID, LOG THE TIME AND START PLAYING VIDEO 3 AT THAT TIME
+        function play3() { 
+            if (WhereamI == 1) {
+                myVideo1.pause();
+                Videotime = myVideo1.currentTime;
+            }
+            if (WhereamI == 2) {
+                myVideo2.pause();
+                Videotime = myVideo2.currentTime;
+            }
+            if (WhereamI == 4) {
+                myVideo4.pause();
+                Videotime = myVideo4.currentTime;
+            }
+            if (WhereamI == 5) {
+                myVideo5.pause();
+                Videotime = myVideo5.currentTime;
+            }
+            myVideo3.currentTime = Videotime;
+            console.log(Videotime);
+            myVideo3.play();
+            myVideo3.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+            WhereamI = 3;
+        }
+
+        //FUNCTION: PAUSE CURRENT VID, LOG THE TIME AND START PLAYING VIDEO 4 AT THAT TIME
+        function play4() { 
+            if (WhereamI == 1) {
+                myVideo1.pause();
+                Videotime = myVideo1.currentTime;
+            }
+            if (WhereamI == 2) {
+                myVideo2.pause();
+                Videotime = myVideo2.currentTime;
+            }
+            if (WhereamI == 3) {
+                myVideo3.pause();
+                Videotime = myVideo3.currentTime;
+            }
+            if (WhereamI == 5) {
+                myVideo5.pause();
+                Videotime = myVideo5.currentTime;
+            }
+            myVideo4.currentTime = Videotime;
+            console.log(Videotime);
+            myVideo4.play();
+            myVideo4.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+            WhereamI = 4;
+        }
+
+        //FUNCTION: PAUSE CURRENT VID, LOG THE TIME AND START PLAYING VIDEO 5 AT THAT TIME
+        function play5() { 
+            if (WhereamI == 1) {
+                myVideo1.pause();
+                Videotime = myVideo1.currentTime;
+            }
+            if (WhereamI == 2) {
+                myVideo2.pause();
+                Videotime = myVideo2.currentTime;
+            }
+            if (WhereamI == 3) {
+                myVideo3.pause();
+                Videotime = myVideo3.currentTime;
+            }
+            if (WhereamI == 4) {
+                myVideo4.pause();
+                Videotime = myVideo4.currentTime;
+            }
+            myVideo5.currentTime = Videotime;
+            console.log(Videotime);
+            myVideo5.play();
+            myVideo5.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+            WhereamI = 5;
+        }
+    
+        //FUNCTION: INCREASE COUNTER BY 1, CONSOLE LOG COUNTER, IF COUNTER = 30 SCROLL TO SCREENSAVER AND PLAY
+        function increaseby1 () {
+            counter++;
+            console.log(counter)
+            if (counter === 30) {
+                play5();
+            }
+        }
+
+        //CALL THE ABOVE FUNCTION EVERY SECOND
+        setInterval(increaseby1, 1000);
+
+        //CODE IS LISTENING FOR A KEYPRESS
+        document.addEventListener("keydown", e=> {
+            
+            //WHEN ANY KEY IS PRESSED, COUNTER = 0 
+            counter = 0;
+                
+            //IF A IS PRESSED CALL PLAY1 FUNCTION
+            if (e.key.toLowerCase() === "a") {
+                play1();
+            }
+            //IF S IS PRESSED CALL PLAY2 FUNCTION 
+            if (e.key.toLowerCase() === "s") {
+                play2();
+            }
+            //IF D IS PRESSED CALL PLAY3 FUNCTION
+            if (e.key.toLowerCase() === "d") {
+                play3(); 
+            }
+            //IF F IS PRESSED CALL PLAY3 FUNCTION
+            if (e.key.toLowerCase() === "f") {
+                play4(); 
+            }
+            //IF G IS PRESSED CALL PLAY3 FUNCTION
+            if (e.key.toLowerCase() === "w") {
+                play5(); 
+            }
+        }); 
+
+    </script>  
+</body>
+</html>
